@@ -1,0 +1,51 @@
+{
+  "authors": "liuhao",
+  "dependencies": {
+    "MLKitCommon": "~> 5.0",
+    "MLKitTextRecognitionCommon": [
+      "1.0.0-beta3"
+    ],
+    "MLKitVision": "~> 3.0"
+  },
+  "description": "实现GOOGLE MLKIT接口的目的是为了能够直接使用TENSORFLOW LITE在IOS上推理，Resources下存放的是模型文件. 本模块直接在pod内本地指定PATH加载即可，其已经可以与MLKIT 推理框架相兼容 :)",
+  "frameworks": [
+    "Accelerate",
+    "AVFoundation",
+    "CoreGraphics",
+    "CoreImage",
+    "CoreMedia",
+    "CoreVideo",
+    "Foundation",
+    "UIKit"
+  ],
+  "homepage": "wechat:18126321802",
+  "libraries": [
+    "c++"
+  ],
+  "license": {
+    "text": "liuhao",
+    "type": "Copyright"
+  },
+  "name": "MLKitTextRecognitionChinese",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "preserve_paths": [
+    "CHANGELOG.md",
+    "README.md",
+    "NOTICES"
+  ],
+  "resource_bundles": {
+    "ChineseOCRResources": [
+      "Resources/ChineseOCRResources/**"
+    ]
+  },
+  "source": {
+    "http": "chinese ocr model has been trained by liuhao"
+  },
+  "summary": "中文OCR模型在MLKIT框架上的适配器",
+  "vendored_frameworks": [
+    "Frameworks/MLKitTextRecognitionChinese.framework"
+  ],
+  "version": "1.0.0-beta3"
+}
